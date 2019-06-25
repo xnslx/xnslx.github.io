@@ -70,12 +70,12 @@ input {
 .prev {
 	position: absolute;
 	top: 50%;
-	margin-left: 150px;
+	margin-left: 10%;
 }
 .next {
 	position: absolute;
 	top: 50%;
-	margin-left: 1170px;
+	margin-left: 89%;
 }
 
 /*CARDS*/
