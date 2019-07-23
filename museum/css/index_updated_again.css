@@ -165,7 +165,7 @@ button h4{
 }
 }
 .exhibit {
-	position: relative;
+	position: absolute;
 }
 .exhibit-left {
 	/*width: 300px;
@@ -227,6 +227,9 @@ button h4{
 	text-align: right;
 }
 @media all and (min-width:680px ) {
+.exhibit{
+	position: absolute;
+}
 .exhibit-left {
 	position: relative;
 	margin-left: 5%;
@@ -287,13 +290,13 @@ button h4{
 	text-decoration: underline;
 }
 }
-/*video*/
+/*VIDEO*/
 .video-container {
-	position: absolute;
-	top: 430%;
+	position: relative;
 	height: auto;
 	width: auto;
-	background-color: #DFBEB4;
+	margin-top: 210%;
+	/*background-color: #DFBEB4;*/
 }
 .video-container > img {
 	height: auto;
@@ -313,5 +316,14 @@ button h4{
 	font-size: 12px;
 	text-decoration: underline;
 }
-
+@media all and (min-width:680px) {
+.video-container {
+	position: relative;
+	/*top: 430%;*/
+	height: auto;
+	width: auto;
+	margin-top: 100%;
+	/*background-color: #DFBEB4;*/
+}	
+}
 
