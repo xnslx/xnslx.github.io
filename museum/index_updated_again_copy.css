@@ -58,7 +58,7 @@ button h4{
 	color: #F9F9F8;
 }
 .nav-text h6{
-	font-size: 10px;
+	font-size: 12px;
 	color: #F9F9F8;
 	font-weight: 300;
 	padding-top: 16px;
@@ -95,6 +95,15 @@ button h4{
 	height: auto;
 	width: 240px;
 }
+@media all and (min-width:680px) {
+.logo {
+	position: relative;
+	width: 8%;
+	height: auto;
+	margin-top: 20px;
+	margin-left: 20px;
+}	
+}
 /*featured events*/
 .event-contianer{
 	display: flex;
@@ -119,7 +128,7 @@ button h4{
 	object-fit: cover;
 }
 .event-item > h3{
-	font-size: 16px;
+	font-size: 20px;
 	color: #483C38;
 	margin-top: 12px;
 	text-align: left;	
@@ -167,13 +176,11 @@ button h4{
 .exhibit {
 	display: flex;
 	flex-direction: column;
-	/*background-color: red;*/
 	padding: 20px;
 	padding-bottom: 60px;
-/*	margin-bottom: 40px;*/
 }
 .exhibit-left > h5 {
-	font-size: 10px;
+	font-size: 12px;
 	color: #483C38;
 	padding-top: 40px;
 }
@@ -184,11 +191,12 @@ button h4{
 	padding: 0 0 20px 0;
 }
 .exhibit-left > h6 {
-	font-size: 10px;
-	color: #483C38;
+	font-size: 12px;
+	color: #720026;
+	text-decoration: underline;
 }
 .exhibit-right > h5 {
-	font-size: 10px;
+	font-size: 12px;
 	color: #483C38;
 	padding-top: 40px;
 }
@@ -199,8 +207,9 @@ button h4{
 	padding: 0 0 20px 0;
 }
 .exhibit-right > h6 {
-	font-size: 10px;
-	color: #483C38;
+	font-size: 12px;
+	color: #720026;
+	text-decoration: underline;
 }
 .exhibit-left > img {
 	height: auto;
@@ -228,6 +237,10 @@ button h4{
 	margin-left: 60px;
 }
 }
+.video-show {
+	max-height: auto;
+	overflow: auto;
+}
 .video-picture > img {
 	width: 90%;
 	height: 90%;
@@ -238,19 +251,19 @@ button h4{
     margin-top: 20px;
 }
 .video-discription > h3 {
-	font-size: 24px;
+	font-size: 20px;
 	color: #483C38;
 	font-weight: 900;
 	margin: 20px 0 0 20px;
 }
 .video-discription > h5 {
-	font-size: 16px;
-	color: #483C38;
+	font-size: 14px;
+	color: #948681;
 	margin: 20px 0 12px 20px;
 }
 .video-discription > h6 {
 	font-size: 12px;
-	color: #483C38;
+	color: #720026;
 	text-decoration: underline;
 	margin: 0 0 20px 20px;
 }
@@ -275,11 +288,45 @@ button h4{
 }
 .video-discription > h5 {
 	font-size: 18px;
-	color: #483C38;
+	color: #948681;
 }
 .video-discription > h6 {
 	font-size: 14px;
-	color: #483C38;
+	color: #720026;
 	text-decoration: underline;
+}
+}
+footer {
+	background-color: #483C38;
+	height: auto;
+	width: 100%;
+	position: absolute;
+    margin-top:40px;
+}
+footer .text-container {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	margin-top: 20px;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	position: relative;
+}
+.text-container >div:nth-child(1){
+	margin-bottom: 20px;
+	color: #F9F9F8;
+}
+.text-container >div:nth-child(2){
+	margin-bottom: 20px;
+	color: #F9F9F8;
+}
+@media all and (min-width:680px) {
+footer .text-container {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	width: auto;
+	height: 200px;
 }
 }
