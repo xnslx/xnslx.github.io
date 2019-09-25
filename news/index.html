@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lawrence City Hall</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="title">Lawrence City Hall</h1>
+        <article class="lisa">
+            <h3>Lisa Larsen, Mayor</h3>
+            <p>Lisa Larsen’s family moved to Larned, Kansas around 1971 after her father retired from the military. In 1981, Lisa earned her BS degree in Geology from Fort Hays State University. She lived in Lawrence from the mid to late 1980’s and returned
+                in 1998. Her career has spanned more 30 years as an Environmental Geologist. She initially worked in the environmental regulatory field for the Kansas Department of Health and Environment. In 1992, she started an environmental consulting
+                firm, Larsen & Associates, Inc. In 2014 she sold her business.</p>
+        </article>
+        <article class="jennifer">
+            <h3>Jennifer Ananda, Vice Mayor</h3>
+            <p>Jennifer Ananda has lived in Lawrence since 2000. Jennifer received her bachelor’s degree, master’s degree in social welfare, and law degree from the University of Kansas. Jennifer worked at the Merc Co+op, the Lawrence Public Library, and
+                served on several boards during her time in school. Jennifer went from law school to work at the Kansas Coalition Against Sexual and Domestic Violence doing facilitation and community organizing. After leaving the coalition, Jennifer opened
+                a law practice with Boog Highberger, where she practiced civil and criminal litigation and immigration law. After doing litigation at the coalition for two years, Jennifer went to KU as the Deputy Title IX Coordinator and Policy Specialist.
+                In 2018, Jennifer became the Title IX Coordinator at Emporia State University. Jennifer was elected to the Lawrence City Commission in 2017.</p>
+        </article>
+        <article class="leslie">
+            <h3>Leslie Soden, City Commissioner</h3>
+            <p>Leslie was elected to the City Commission in 2015 and served as Mayor in 2017. Leslie has been actively involved in her community for the past 10 years via the Joint Economic Development Council, the Lawrence Affordable Housing Coalition,
+                and the East Lawrence Neighborhood Association. This unique background combines experience with neighborhood issues, small business ownership, and economic development policy, and is a very unique skill set. She is ready to put her experience
+                to work for the people of Lawrence.</p>
+        </article>
+        <article class="boley">
+            <h3>Stuart Boley, City Commissioner</h3>
+            <p>Stuart Boley grew up in Lenexa, Kansas, and attended KU, graduating in 1977 with a B.A. in English and Modern European Studies. He met and married his wife Lisa in Lawrence. Stuart worked in Houston, Texas and then in Washington, D.C. as an
+                auditor with the Internal Revenue Service. In 1983 Stuart and Lisa returned to Lawrence and together they raised their three children here. Stuart retired in 2009 after a 32-year career with the IRS. He also worked from 2011 to 2017 as
+                the administrative officer of the Douglas County Community Foundation.</p>
+        </article>
+        <article class="herbert">
+            <h3>Matthew Herbert, City Commissioner</h3>
+            <p>After earning a BGS in history, a BSE in secondary education and a master’s degree in curriculum & instruction all from the University of Kansas, Matthew began teaching high school debate at Highland Park high school in Topeka, Kansas. In
+                2006, Matthew was awarded the Horizon Award from the State of Kansas, an award given annually to the best new teachers in the state. Three years later, Matthew’s teaching and coaching was recognized on the floor of the state senate after
+                his former high school debate student, Derek Ziegler, won the Collegiate National Debate Championship. Today, Matthew finds himself teaching civics and government at Lawrence High School. In addition to his teaching duties, Matthew owns
+                Renaissance Property Management.
+            </p>
+        </article>
+
+    </header>
+    <div id="photos-container">
+        <div><img class="img1" src="images/1.png" alt="city mayor"></div>
+        <div><img class="img2" src="images/2.png" alt="vice mayor"></div>
+        <div><img class="img3" src="images/3.png" alt="city Commissioner"></div>
+        <div><img class="img4" src="images/4.png" alt="city Commissioner"></div>
+        <div><img class="img5" src="images/5.png" alt="city Commissioner"></div>
+    </div>
+
+    <script type="text/javscript" src="index.js" async defer></script>
+    <script>
+        const x = document.querySelectorAll("img");
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', myFunc);
+
+        function myFunc() {
+            if (window.scrollY > 0 && window.scrollY < 765) {
+                x[0].classList.add('active');
+                x[1].classList.remove('active');
+                x[2].classList.remove('active');
+                x[3].classList.remove('active');
+                x[4].classList.remove('active');
+            } else if (window.scrollY > 765 && window.scrollY < 1633) {
+                x[0].classList.remove('active');
+                x[1].classList.add('active');
+                x[2].classList.remove('active');
+                x[3].classList.remove('active');
+                x[4].classList.remove('active');
+            } else if (window.scrollY > 1633 && window.scrollY < 2268) {
+                x[0].classList.remove('active');
+                x[1].classList.remove('active');
+                x[2].classList.add('active');
+                x[3].classList.remove('active');
+                x[4].classList.remove('active');
+            } else if (window.scrollY > 2268 && window.scrollY < 2905) {
+                x[0].classList.remove('active');
+                x[1].classList.remove('active');
+                x[2].classList.remove('active');
+                x[3].classList.add('active');
+                x[4].classList.remove('active');
+            } else if (window.scrollY > 2905) {
+                x[0].classList.remove('active');
+                x[1].classList.remove('active');
+                x[2].classList.remove('active');
+                x[3].classList.remove('active');
+                x[4].classList.add('active');
+            } else if (window.scrollY === 0) {
+                x[0].classList.remove('active');
+                x[1].classList.remove('active');
+                x[2].classList.remove('active');
+                x[3].classList.remove('active');
+                x[4].classList.remove('active');
+            }
+        };
+    </script>
+</body>
+</div>
+
+</html>
