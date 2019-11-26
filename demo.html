@@ -1,219 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141803592-1"></script>
-        <script>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141803592-1"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-141803592-1');
-        </script>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" name="viewport">
-		<title>Demo</title>
-		<style type="text/css">
-			* {
-				padding: 0;
-				margin: 0;
-				font-family: verdana;
-				text-decoration: none;
-				color: #333333;
-				background-color: #f9f9f9;
-			}
-			.nav-bar {
-				padding: 0;
-				margin: 0;
-			}
-			
-			.nav-bar .nav-container {
-				padding: 0;
-				margin: 0;
-			}
-			
-			.logo {
-				display: block;
-				margin-top: 20px;
-				text-align: center;
-				font-size: 30px;
-				color: #333333;
-				font-weight: 900;	
-			}
-			
-			.nav-flexbox {
-				display: flex;
-				justify-content: space-around;
-				margin-top: 20px;
-			}
-			
-			.nav-flexbox li {
-				list-style: none;
-			}
-			
-			.nav-flexbox li a {
-				font-size: 14px;
-				text-transform: uppercase;
-			}
-			
-			li > a:hover  {
-				cursor: pointer;
-				color: #1C04FF;
-			}
-			
-			li > a:focus {
-				color: #1C04FF;
-				/*border-top: 3px solid #1C04FF;
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Demo</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: verdana;
+            text-decoration: none;
+            color: #333333;
+            background-color: #f9f9f9;
+        }
+        
+        .nav-bar {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav-bar .nav-container {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .logo {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 30px;
+            color: #333333;
+            font-weight: 900;
+        }
+        
+        .nav-flexbox {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        
+        .nav-flexbox li {
+            list-style: none;
+        }
+        
+        .nav-flexbox li a {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        li>a:hover {
+            cursor: pointer;
+            color: #1C04FF;
+        }
+        
+        li>a:focus {
+            color: #1C04FF;
+            /*border-top: 3px solid #1C04FF;
 				padding-top: 30px;*/
-			}
-			.current {
-				color: #1C04FF;
-				/*border-top: 3px solid #1C04FF;
+        }
+        
+        .current {
+            color: #1C04FF;
+            /*border-top: 3px solid #1C04FF;
 				padding-top: 30px;*/
-			}
-			@media all and (min-width: 767px) {
-				.logo {
-				display: block;
-				margin-top: 20px;
-				text-align: left;
-				margin-left: 49px;
-				}
-				
-				
-				
-				.nav-flexbox {
-				margin: 0;
-				padding: 0;
-				display: flex;
-				justify-content: flex-end;
-				margin-top: -20px;
-				margin-right: 49px;
-				
-				
-			    }
-			    .nav-flexbox li {
-				margin-left: 28px;
-			}
-			li > a:focus {
-				color: #1C04FF;
-				border-top: 3px solid #1C04FF;
-				padding-top: 30px;
-			}
-			.current {
-				color: #1C04FF;
-				border-top: 3px solid #1C04FF;
-				padding-top: 30px;
-			}
-			
-			
-			
-			}
-			.live-demo {
-				display: flex;
-				flex-direction: column;
-				margin-top: 40px;
-			}
-			.demo-item {
-				margin-left: 40px;
-				margin-right: 40px;
-			}
-			.live-demo .demo-item img {
-				width: 100%;
-				height: auto;
-				transition: transform 0.5s;
-			}
-			img:hover {
-				transform: scale(1.02);
-				box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-			}
-			h3{
-				font-size: 16px;
-				font-weight: 400;
-				text-align: left;
-				padding-top: 10px;
-				padding-left: -50px;	
-			}
-			@media all and (min-width: 767px) {
-				.live-demo {
-				display: flex;
-				flex-direction: column;
-				margin-top: 60px;
-				margin-left: 250px;
-				margin-right: 250px;
-			}
-			.live-demo .demo-item img {
-				width: 100%;
-				height: auto;
-				transition: transform 0.5s;
-			}
-			h3{
-				font-size: 20px;
-				font-weight: 400;
-				padding-top: 10px;
-				margin-left: 40px;
-				margin-top: 20px;	
-			}
-			}
-			.social-media-icons {
-				display: flex;
-				flex-direction: row;
-				justify-content: flex-start ;
-				margin-top: 200px;
-				margin-bottom: 100px;
-			}
-			
-			.icon {
-				font-size: 14px;	
-			}
-			.icon:first-child {
-				padding: 0 20px;
-			}
-			.icon:last-child {
-				padding: 0 20px;
-			}
-			
-			.footer-text {
-				display: block;
-				padding-left: 20px;
-				margin-top: -80px;
-			}
-			.footer-text h6 {
-				font-weight: 100;
-			}
-		</style>
-	</head>
-	<body>
-		<nav class="nav-bar">
-			<div class="nav-container">
-				<a class="logo" href="index.html">Xian Li</a>
-				<ul class="nav-flexbox">
-					<li class="nav-item"><a href="index.html">Case Study</a></li>
-					<li class="nav-item"><a href="illustration_updated.html">Other Work</a></li>
-					<li class="nav-item"><a href="demo.html" class="current">Demo</a></li>
-					<li class="nav-item"><a href="contact_page.html">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="live-demo">
-			<div class="demo-item">
-				<a href="/museum/index_updated_again_copy.html">
-					<img src="img/museum project dribbble.jpg" />
-				</a>
-				<div class="demo-text">
-					<h3><a href="/museum/index_updated_again_copy.html">Watkins Museum Landing Page Redesign Practice</a></h3>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<div class="footer-container">
-				<div class="social-media-icons">
-					<div class="icon"><a href="https://www.behance.net/xnslx89fc36">Behance</a></div>
-					<div class="icon"><a href="https://dribbble.com/xnslx">Dribbble</a></div>
-					<div class="icon"><a href="https://medium.com/@xianli_74374">Medium</a></div>
-				</div>
-				<span class="footer-text"><h6>This website is written by Xian Li.</h6></span>
-			</div>
-		</footer>
-	</body>
+        }
+        
+        @media all and (min-width: 767px) {
+            .logo {
+                display: block;
+                margin-top: 20px;
+                text-align: left;
+                margin-left: 49px;
+            }
+            .nav-flexbox {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-end;
+                margin-top: -20px;
+                margin-right: 49px;
+            }
+            .nav-flexbox li {
+                margin-left: 28px;
+            }
+            li>a:focus {
+                color: #1C04FF;
+                border-top: 3px solid #1C04FF;
+                padding-top: 30px;
+            }
+            .current {
+                color: #1C04FF;
+                border-top: 3px solid #1C04FF;
+                padding-top: 30px;
+            }
+        }
+        
+        .live-demo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        
+        .demo-item {
+            margin-bottom: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        
+        .live-demo .demo-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+        }
+        
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+            padding-top: 10px;
+            padding-left: -50px;
+        }
+        
+        @media all and (min-width: 767px) {
+            .live-demo {
+                display: flex;
+                width: 60%;
+                flex-direction: column;
+                margin-top: 60px;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .live-demo .demo-item img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                transition: transform 0.5s;
+            }
+            h3 {
+                font-size: 20px;
+                font-weight: 400;
+                padding-top: 10px;
+                margin-left: 40px;
+                margin-top: 20px;
+            }
+        }
+        
+        .social-media-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-top: 200px;
+            margin-bottom: 100px;
+        }
+        
+        .icon {
+            font-size: 14px;
+        }
+        
+        .icon:first-child {
+            padding: 0 20px;
+        }
+        
+        .icon:last-child {
+            padding: 0 20px;
+        }
+        
+        .footer-text {
+            display: block;
+            padding-left: 20px;
+            margin-top: -80px;
+        }
+        
+        .footer-text h6 {
+            font-weight: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a class="logo" href="index.html">Xian Li</a>
+            <ul class="nav-flexbox">
+                <li class="nav-item"><a href="index.html">Case Study</a></li>
+                <li class="nav-item"><a href="illustration_updated.html">Other Work</a></li>
+                <li class="nav-item"><a href="demo.html" class="current">Demo</a></li>
+                <li class="nav-item"><a href="contact_page.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="live-demo">
+        <div class="demo-item">
+            <a href="Bookmark-Landing-Page- copy/index.html">
+                <img src="Bookmark-Landing-Page- copy/desktop-design.jpg" />
+            </a>
+            <div class="demo-text">
+                <h3><a href="Bookmark-Landing-Page- copy/index.html">Bookmark Landing Page(Code Challenge)</a></h3>
+            </div>
+        </div>
+        <div class="demo-item">
+            <a href="/museum/index_updated_again_copy.html">
+                <img src="img/museum project dribbble.jpg" />
+            </a>
+            <div class="demo-text">
+                <h3><a href="/museum/index_updated_again_copy.html">Watkins Museum Landing Page Redesign Practice</a></h3>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="social-media-icons">
+                <div class="icon"><a href="https://www.behance.net/xnslx89fc36">Behance</a></div>
+                <div class="icon"><a href="https://dribbble.com/xnslx">Dribbble</a></div>
+                <div class="icon"><a href="https://medium.com/@xianli_74374">Medium</a></div>
+            </div>
+            <span class="footer-text"><h6>This website is written by Xian Li.</h6></span>
+        </div>
+    </footer>
+</body>
+
 </html>
